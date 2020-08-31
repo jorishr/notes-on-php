@@ -57,6 +57,22 @@
         echo strpos($var1, 'World');    //-> 6
         echo '<br/><br/>';     
         echo strchr($var1, 'r');    //-> rld
+        
+        echo '<br/><br/>';     
+        echo '<br/><br/>';     
+        
+        //DUMP variable info for debugging: type and value
+        var_dump($var1);    // -> string(11) "Hello World"
+
+        //GET ALL DEFINED VARIABLES AT GIVEN MOMENT IN CODE
+        echo print_r(get_defined_vars());   
+        //echo print_r(get_defined_functions());
+        //echo print_r(get_defined_constants());
+
+        echo "<br/>";
+        //backtrace function calls that have been made
+        echo print_r(debug_backtrace());
+
     ?>
 </body>
 </html>
